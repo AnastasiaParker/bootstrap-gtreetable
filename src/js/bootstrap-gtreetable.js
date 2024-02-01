@@ -7,7 +7,7 @@
         this.language = this.options.languages[this.options.language] === undefined ?
             this.options.languages['en-US'] :
             $.extend({}, this.options.languages['en-US'], this.options.languages[this.options.language]);
-        this._isNodeDragging = false;
+        this._isNodeDragging = true;
         this._lastId = 0;
         
         this.actions = [];
