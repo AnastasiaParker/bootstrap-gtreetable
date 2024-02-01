@@ -24,7 +24,7 @@
         }
         
         var lang = this.language;
-        this.template = this.options.template !== undefined ? this.options.template : 
+        this.template = this.options.template == undefined ? this.options.template : 
            '<table class="table gtreetable">' +
            '<tr class="' + this.options.classes.node + ' ' + this.options.classes.collapsed + '">' +
            '<td>' +
