@@ -7,7 +7,7 @@ module.exports = function (grunt) {
         },
         copy: {
             build: {
-                expand: true,
+                expand: false,
                 cwd: 'src/js',
                 src: ['**/*.js'],
                 dest: 'dist/'
@@ -35,7 +35,7 @@ module.exports = function (grunt) {
         cssmin: {
             build: {
                 files: [{
-                        expand: true,
+                        expand: false,
                         cwd: 'dist/',
                         src: ['*.css'],
                         dest: 'dist/',
